@@ -33,6 +33,10 @@ Before you begin, ensure you have the following installed:
 
 ---
 
+### Deployed backend at render live link --
+    ```bash
+        https://konix-backend-4d2o.onrender.com
+
 ## Setup Instructions
 
 1. **Clone the Repository**:
@@ -62,7 +66,7 @@ Before you begin, ensure you have the following installed:
   - `coin`: Cryptocurrency ID (`bitcoin`, `matic-network`, `ethereum`).
 - **Example Request**:
   ```http
-  GET http://localhost:3000/stats?coin=bitcoin
+  GET https://konix-backend-4d2o.onrender.com/stats?coin=bitcoin
 - **Sample Response**:
   ```http
    {
@@ -80,7 +84,7 @@ Before you begin, ensure you have the following installed:
   - `coin`: Cryptocurrency ID (`bitcoin`, `matic-network`, `ethereum`).
 - **Example Request**:
   ```http
-  GET http://localhost:3000/deviation?coin=ethereum
+  GET https://konix-backend-4d2o.onrender.com/deviation?coin=ethereum
 - **Sample Response**:
   ```http
   {
@@ -93,7 +97,7 @@ Before you begin, ensure you have the following installed:
 - **Description**: `Triggers the background job to fetch cryptocurrency data immediately.`
 - **Example Request**:
   ```http
-  GET http://localhost:3000/fetch-crypto-data
+  GET https://konix-backend-4d2o.onrender.com/fetch-crypto-data
 - **Sample Response**:
   ```http
   {
@@ -112,7 +116,7 @@ Before you begin, ensure you have the following installed:
     │   ├── utils        # Helper functions (e.g., cryptoData fetching)
     │   ├── app.js       # Express app setup
     │   ├── .env         # Enviromental variables used 
-    ├── server.js        # Entry point
+    ├── index.js        # Entry point
     ├── package.json     # Node.js dependencies
     ├── README.md        # Documentation
     
